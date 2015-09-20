@@ -1,0 +1,43 @@
+<!-- Radoslaw Greplowski -->
+
+<DOCTYPE! html>
+
+<html>
+	<head>
+	
+	</head>
+		
+		
+		<body>
+		
+		<p id="demo"></p>
+		
+		<script>
+		
+
+		var fixed;
+		var result;
+		
+		var md = new Date();
+		
+		document.write(md);
+		
+		var d = new Date();
+		d.setFullYear(2015, 11, 25);
+		
+		days = (d - md) / 1000/60/60/24;
+		
+		fixed = days.toFixed(0);
+		
+		document.getElementById("demo").innerHTML = d;
+		
+		document.write("<br />");
+		document.write("<br />");
+		
+		document.write("There is "+fixed+" days left till christmas");
+		
+		</script>
+		
+		</body>
+
+</html>

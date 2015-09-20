@@ -1,0 +1,50 @@
+<!-- Radoslaw Greplowski -->
+
+<DOCTYPE! html>
+
+<html>
+	<head>
+	
+	</head>
+		
+		
+		<body>
+	
+		
+		<button onclick="rng()">Try it</button>
+		
+		<p id="demo"></p>
+		
+		<script>
+
+		var num1;
+		var num2;
+		
+		
+		function rng(){
+		
+		num1 = document.getElementById("demo").innerHTML = Math.floor((Math.random() * 10) + 1);
+		num2 = document.getElementById("demo").innerHTML = Math.floor((Math.random() * 10) + 1);
+		
+		
+		document.write("Our generated number "+num1+"<br />");
+		num2 = prompt("Input your answer");
+		
+		if(num2 == num1){
+		
+		document.write("You have guessed correctly!");
+		
+		}else if(num1 > num2){
+		
+		document.write("The number is greater than your input");
+		
+		}else{
+		document.write("The number is less than your input");
+		}
+		}
+		</script>
+		
+		
+		</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!-- Radoslaw Greplowski -->
+
+<DOCTYPE! html>
+
+<html>
+	<head>
+	
+	</head>
+		
+		
+		<body>
+	
+		
+		<button onclick="rng()">Add</button>
+		<button onclick="rng1()">Subtract</button>
+		<button onclick="rng2()">Multiply</button>
+		<button onclick="rng3()">Divide</button>
+	
+		<br />
+		
+		<p id="demo"></p>
+		
+		<script>
+
+		var num1;
+		var num2;
+		var result;
+		
+		
+		function rng(){
+		
+		num1 = document.getElementById("demo").innerHTML = prompt("Input number");
+		num2 = document.getElementById("demo").innerHTML = prompt("Input number");
+		
+		result = Number(num1) + Number(num2);
+		
+		document.write("Your result is: " + result);
+		
+		}
+		
+				function rng1(){
+		
+		num1 = document.getElementById("demo").innerHTML = prompt("Input number");
+		num2 = document.getElementById("demo").innerHTML = prompt("Input number");
+		
+		result = Number(num1) - Number(num2);
+		
+		document.write("Your result is: " + result);
+		
+		}
+		
+				function rng2(){
+		
+		num1 = document.getElementById("demo").innerHTML = prompt("Input number");
+		num2 = document.getElementById("demo").innerHTML = prompt("Input number");
+		
+		result = Number(num1) * Number(num2);
+		
+		document.write("Your result is: " + result);
+		
+		}
+		
+				function rng3(){
+		
+		num1 = document.getElementById("demo").innerHTML = prompt("Input number");
+		num2 = document.getElementById("demo").innerHTML = prompt("Input number");
+		
+		result = Number(num1) / Number(num2);
+		
+		document.write("Your result is: " + result);
+		
+		}
+		
+		
+	
+		
+		</script>
+		
+		
+		</body>
+
+</html>
